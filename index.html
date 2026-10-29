@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Md. Tamim Ahmed Opi – ITS and Network Engineer</title>
+<meta name="description" content="Portfolio of Md. Tamim Ahmed Opi, ITS and network engineer working on national highway corridors in Bangladesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top">Opi</a>
+  <nav aria-label="Sections"><a href="#about">About</a><a href="#network">Network</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#photos">Photos</a><a href="#contact">Contact</a></nav>
+  <button id="theme" type="button" aria-label="Switch light or dark theme">◐</button>
+</div></header>
+
+<main>
+<section class="hero" id="top">
+  <div class="wrap">
+    <img class="me" src="images/me.jpg" alt="Portrait of Md. Tamim Ahmed Opi" width="150" height="150">
+    <p class="role">ITS and network engineer, Dhaka</p>
+    <h1>Md. Tamim Ahmed Opi</h1>
+    <p class="lede">I keep highway technology running: traffic detection, message signs, CCTV, speed enforcement and the networks and servers behind them.</p>
+    <div class="vms" id="vms" role="status">VDS  VMS  CCTV  SPEED ENFORCEMENT</div>
+    <div class="try">
+      <label for="msg">Write on the sign</label>
+      <input id="msg" maxlength="34" placeholder="Slow down, school ahead" autocomplete="off">
+      <button id="send" type="button" class="btn">Show on sign</button>
+    </div>
+    <p class="hint">Move your pointer over the road to check each car’s speed (limit 80), or over a pole to see what it is. Watch the VDS pole: it raises an alert when it spots something.</p>
+  </div>
+  <canvas id="road" aria-hidden="true"></canvas>
+</section>
+
+<section id="about" class="wrap">
+  <h2>About</h2>
+  <p>I’m a CSE graduate with more than two years of hands-on work in Intelligent Transportation Systems, IT infrastructure, network configuration and troubleshooting. I support system reliability, fix technical faults, coordinate field teams and write the documentation that keeps everyone aligned.</p>
+</section>
+
+<section id="network" class="wrap">
+  <h2>How the corridor talks to the control room</h2>
+  <p>Tap a node or a button to see what I do at that point. The dots are data moving to the centre.</p>
+  <canvas id="net" role="img" aria-label="Diagram: TMC servers connect through a core switch and a fiber backbone to field devices: VDS, VMS, CCTV and speed enforcement."></canvas>
+  <div class="chips" id="nodebtns"></div>
+  <div class="card" id="info" aria-live="polite"><h3></h3><p></p></div>
+</section>
+
+<section id="work" class="wrap">
+  <h2>Experience</h2>
+  <div class="tl">
+    <h3>Resident Engineer, Installation and Customer Support</h3>
+    <p class="when">VaaaN Infra Private Limited, May 2024 to present</p>
+    <p><em>Project: Improving the Reliability and Safety of National Highway Corridors in Bangladesh</em></p>
+    <ul>
+      <li><strong>ITS infrastructure.</strong> Manage and maintain devices at the Traffic Management Centre: vehicle detection, variable message signs, CCTV and speed enforcement.</li>
+      <li><strong>Monitoring.</strong> Watch server health and device status in SolarWinds and the NMS to keep downtime low.</li>
+      <li><strong>Troubleshooting.</strong> Diagnose faults in TMC servers, hardware and software.</li>
+      <li><strong>Installation and configuration.</strong> Install, network and configure new ITS devices so they connect properly.</li>
+      <li><strong>Data security.</strong> Run backups and log storage, and document system activity.</li>
+      <li><strong>Reporting and resources.</strong> Write technical reports on road incidents and system faults, work with field teams to resolve them, prepare material and cost estimates, and manage procurement requisitions.</li>
+    </ul>
+  </div>
+  <h3 class="group">Research</h3>
+  <div class="card"><h3>Enhancing Network Intrusion Detection System</h3>
+    <p class="when">Undergraduate thesis</p>
+    <p>Built a machine learning model that detects network anomalies and security threats on the CICIDS-2017 dataset, and compared how well different methods detect intrusions in traffic patterns.</p></div>
+</section>
+
+<section id="skills" class="wrap">
+  <h2>Skills</h2>
+  <div class="tabs" role="tablist" aria-label="Skill areas">
+    <button role="tab" aria-selected="true" aria-controls="p0" id="t0" type="button">Networking</button>
+    <button role="tab" aria-selected="false" aria-controls="p1" id="t1" type="button">ITS and servers</button>
+    <button role="tab" aria-selected="false" aria-controls="p2" id="t2" type="button">Code and tools</button>
+  </div>
+  <div class="card chips ro" role="tabpanel" id="p0" aria-labelledby="t0"><span>Cisco routers and switches</span><span>VLAN</span><span>Inter-VLAN routing</span><span>Static routing</span><span>RIPv2</span><span>OSPFv2</span><span>EIGRP</span><span>EtherChannel (LACP, PAgP)</span><span>Standard and extended ACL</span><span>SSH</span><span>IPv4 and subnetting</span><span>LAN/WAN troubleshooting</span></div>
+  <div class="card chips ro" role="tabpanel" id="p1" aria-labelledby="t1" hidden><span>VDS</span><span>VMS</span><span>CCTV</span><span>Speed cameras</span><span>Server troubleshooting</span><span>Hardware and software support</span><span>NMS</span><span>SolarWinds</span></div>
+  <div class="card chips ro" role="tabpanel" id="p2" aria-labelledby="t2" hidden><span>C</span><span>Python</span><span>HTML5 and CSS3</span><span>Git and GitHub</span><span>Cisco Packet Tracer</span><span>Word, Excel, PowerPoint</span><span>Google Docs and Sheets</span></div>
+  <h3 class="group">Education and training</h3>
+  <div class="edu">
+    <div class="card"><h3>B.Sc. in Computer Science and Engineering</h3><p>Daffodil International University, 2024, CGPA 3.40 / 4.00</p></div>
+    <div class="card"><h3>Higher Secondary Certificate, Science</h3><p>Bhola Government College, 2019, GPA 4.75 / 5.00</p></div>
+    <div class="card"><h3>Secondary School Certificate, Science</h3><p>Bhola Abdur Rob High School and College, 2017, GPA 5.00 / 5.00</p></div>
+    <div class="card"><h3>Certifications</h3><p>ITS O&amp;M Certification, KOICA, South Korea. CCNA training, E-Learning &amp; Earning Institute.</p></div>
+  </div>
+</section>
+
+<section id="photos" class="wrap">
+  <h2>From the field and the control room</h2>
+  <div class="chips" id="filters"></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section id="contact" class="wrap">
+  <h2>Contact</h2>
+  <div class="card"><dl>
+    <dt>Email</dt><dd><a href="mailto:tamimahmedopi@gmail.com">tamimahmedopi@gmail.com</a></dd>
+    <dt>Phone</dt><dd><a href="tel:+8801790375957">+880 1790 375957</a></dd>
+    <dt>GitHub</dt><dd><a href="https://github.com/opi2001" rel="noopener">github.com/opi2001</a></dd>
+    <dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/md-tamim-ahmed-opi" rel="noopener">linkedin.com/in/md-tamim-ahmed-opi</a></dd>
+    <dt>Location</dt><dd>Dhaka, Bangladesh</dd>
+  </dl></div>
+</section>
+</main>
+
+<footer><div class="wrap">Md. Tamim Ahmed Opi, <span id="yr">2026</span></div></footer>
+<dialog id="lb"><img alt=""><p></p></dialog>
+<script src="js/graphics.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
